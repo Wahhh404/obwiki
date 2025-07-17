@@ -20,6 +20,10 @@
 
  	安装好后，输入npm run serve-dev 启动项目
 
+四、启动Redis
+
+	双击"启动Redis.bat"即可运行redis
+
 四、设置密码
 
 	找到登录按钮，用户名test 密码输入你自己想要的，然后点击登录，再去idea控制台里找到req的输出信息，
