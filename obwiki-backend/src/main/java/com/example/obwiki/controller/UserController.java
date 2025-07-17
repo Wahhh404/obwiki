@@ -47,6 +47,7 @@ public class UserController {
     //登录
     @PostMapping("/login")
     public CommonResp login(@Valid @RequestBody UserLoginReq req) {
+        System.out.println("req = " + req);
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp<UserLoginResp> resp = new CommonResp<>();
         UserLoginResp userLoginResp = userService.login(req);
