@@ -157,6 +157,8 @@ const route = useRoute();
 const ebookId = route.query.ebookId || '0'; // 默认值为 '0'
 import '@wangeditor/editor/dist/css/style.css' // 样式
 import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
+
+
 const editorRef = ref()
 const valueHtml = ref('<p>请输入内容</p>')
 const toolbarConfig = {}

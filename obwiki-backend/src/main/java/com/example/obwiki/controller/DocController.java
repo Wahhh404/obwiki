@@ -39,6 +39,13 @@ public class DocController {
         return resp;
     }
 
+    @GetMapping("/vote/{id}")
+    public CommonResp vote(@PathVariable Long id) {
+        CommonResp commonResp = new CommonResp();
+        docService.vote(id);
+        return commonResp;
+    }
+
     @ApiOperation(value = "获取全部文档", notes = "查询所有文档列表")
     @GetMapping("/all")
     public CommonResp<List<DocQueryResp>> all() {

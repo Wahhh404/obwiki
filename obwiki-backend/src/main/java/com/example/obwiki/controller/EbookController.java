@@ -8,23 +8,12 @@ import com.example.obwiki.resp.EbookQueryResp;
 import com.example.obwiki.resp.PageResp;
 import com.example.obwiki.service.IEbookService;
 import com.example.obwiki.utils.CopyUtil;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.stereotype.Controller;
 
-import javax.validation.Valid;
-import java.util.List;
-
-/**
- * <p>
- * 电子书 前端控制器
- * </p>
- *
- * @author cr
- * @since 2025-06-23
- */
-import io.swagger.annotations.*;
-import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 

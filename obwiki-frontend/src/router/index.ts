@@ -15,23 +15,28 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/admin/category',
     name: 'AdminCategory',
-    component: () => import( '../views/admin/admin-category.vue')
+    component: () => import('../views/admin/admin-category.vue')
   },
   {
     path: '/admin/ebook',
     name: 'AdminEbook',
-    component: () => import( '../views/admin/admin-ebook.vue')
+    component: () => import('../views/admin/admin-ebook.vue')
   },
   {
     path: '/admin/doc',
     name: 'AdminDoc',
-    component: () => import( '../views/admin/admin-doc.vue'),
+    component: () => import('../views/admin/admin-doc.vue'),
     props: route => ({ ebookId: route.query.ebookId }) // 解析 ebookId 参数
   },
   {
     path: '/doc',
     name: 'Doc',
-    component: () => import( '../views/DocView.vue')
+    component: () => import('../views/DocView.vue')
+  },
+  {
+    path: '/admin/user',
+    name: 'AdminUser',
+    component: () => import('../views/admin/admin-user.vue')
   }
 ]
 

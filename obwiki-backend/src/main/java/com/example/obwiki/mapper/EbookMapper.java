@@ -1,7 +1,7 @@
 package com.example.obwiki.mapper;
 
-import com.example.obwiki.entity.Ebook;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.obwiki.entity.Ebook;
 
 /**
  * <p>
@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface EbookMapper extends BaseMapper<Ebook> {
 
+    void increaseViewCount(Long ebookId);
 }

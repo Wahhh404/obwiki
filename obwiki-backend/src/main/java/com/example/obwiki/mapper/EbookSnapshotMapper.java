@@ -1,7 +1,10 @@
 package com.example.obwiki.mapper;
 
-import com.example.obwiki.entity.EbookSnapshot;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.obwiki.entity.EbookSnapshot;
+import com.example.obwiki.resp.StatisticResp;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface EbookSnapshotMapper extends BaseMapper<EbookSnapshot> {
 
+    void genSnapshot();
+
+    List<StatisticResp> getStatistic();
+
+    List<StatisticResp> get30Statistic();
 }

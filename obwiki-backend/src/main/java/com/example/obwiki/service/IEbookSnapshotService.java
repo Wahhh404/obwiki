@@ -1,7 +1,10 @@
 package com.example.obwiki.service;
 
-import com.example.obwiki.entity.EbookSnapshot;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.example.obwiki.entity.EbookSnapshot;
+import com.example.obwiki.resp.StatisticResp;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IEbookSnapshotService extends IService<EbookSnapshot> {
 
+    void genSnapshot();
+
+    List<StatisticResp> getStatistic();
+
+    List<StatisticResp> get30Statistic();
 }

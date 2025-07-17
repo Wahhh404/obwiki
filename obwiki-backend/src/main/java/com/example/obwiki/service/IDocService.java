@@ -1,7 +1,7 @@
 package com.example.obwiki.service;
 
-import com.example.obwiki.entity.Doc;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.example.obwiki.entity.Doc;
 import com.example.obwiki.rep.DocQueryReq;
 import com.example.obwiki.rep.DocSaveReq;
 import com.example.obwiki.resp.DocQueryResp;
@@ -20,6 +20,10 @@ import java.util.List;
 public interface IDocService extends IService<Doc> {
 
     List<DocQueryResp> allbyEbookId(Long ebookId);
+
+    void updateEbookInfo();
+
+    void vote(Long id);
 
     PageResp<DocQueryResp> listByname(DocQueryReq req);
 

@@ -7,10 +7,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @MapperScan("com.example.obwiki.mapper")
 @SpringBootApplication
 @ServletComponentScan
+@EnableScheduling
+@EnableAsync
 public class ObwikiApplication {
 
     //使用SLF4j框架创建日志记录器 获取一个与ObwikiApplication类相关联的日志记录器实例

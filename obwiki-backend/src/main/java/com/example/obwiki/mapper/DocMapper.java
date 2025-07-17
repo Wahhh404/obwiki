@@ -1,7 +1,7 @@
 package com.example.obwiki.mapper;
 
-import com.example.obwiki.entity.Doc;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.obwiki.entity.Doc;
 
 /**
  * <p>
@@ -13,4 +13,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface DocMapper extends BaseMapper<Doc> {
 
+    void increaseViewCount(Long id);
+
+    void increaseVoteCount(Long id);
+
+    void updateEbookInfo();
 }
